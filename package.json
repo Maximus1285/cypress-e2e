@@ -1,0 +1,34 @@
+{
+  "name": "cypress-e2e",
+  "version": "1.0.0",
+  "description": "e2e testing framework for a webapp, that includes visual testing as well",
+  "main": "index.js",
+  "repository": "git@github.com:Maximus1285/cypress-e2e.git",
+  "author": "Marco Sanabria <marco.sanabria@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:visual:update-baseline": "./node_modules/.bin/cypress-image-diff -u",
+    "cy:visual:report:generate": "./node_modules/.bin/cypress-image-diff-html-report generate",
+    "cy:visual:report:open": "./node_modules/.bin/cypress-image-diff-html-report start",
+    "cy:allure:generate": "./node_modules/.bin/allure generate allure-results --clean",
+    "cy:allure:open": "./node_modules/.bin/allure open"
+  },
+  "devDependencies": {
+    "allure": "^0.0.0",
+    "allure-commandline": "^2.30.0",
+    "allure-cypress": "^3.0.2",
+    "cypress": "^13.14.2",
+    "cypress-real-events": "^1.13.0",
+    "cypress-wait-until": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "packageManager": "yarn@4.5.0",
+  "dependencies": {
+    "cypress-image-diff-html-report": "^2.2.0",
+    "cypress-image-diff-js": "^2.2.1"
+  }
+}

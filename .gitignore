@@ -1,4 +1,10 @@
 # Logs
+allure-results/
+allure-report/
+cypress-image-diff-screenshots/comparison/
+cypress-image-diff-screenshots/diff/
+cypress-image-diff-html-report/
+.yarn/
 logs
 *.log
 npm-debug.log*

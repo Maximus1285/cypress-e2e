@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "module": "Node16",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "sourceMap": true,
+    "target": "ES2021",
+    "moduleResolution": "node16",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "lib": ["ES2021", "dom"],
+    "types": ["cypress", "node", "cypress-real-events"],
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts", "cypress/**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".yarn",
+    "*.json",
+    "*.yaml",
+    "*.yml",
+    "*.csv",
+    "*.md",
+    "*.log",
+    "*.lock",
+    ".prettierrc",
+    ".eslintrc",
+    ".gitignore",
+    ".nvmrc"
+  ]
+}
